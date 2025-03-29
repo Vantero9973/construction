@@ -1,7 +1,13 @@
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Testimonials from "@/components/Testimonials";
+
 export default function Home() {
   return (
     <div>
-      <h1>Nick is gay.com</h1>
+      <Hero />
+      <Services />
+      <Testimonials />
     </div>
   );
 }
