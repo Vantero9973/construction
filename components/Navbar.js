@@ -15,7 +15,7 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
-export default function Example() {
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [isAtTop, setIsAtTop] = useState(true);
@@ -44,7 +44,7 @@ export default function Example() {
     <header
       className={`sticky top-0 z-50 transition-all duration-500 ease-in-out ${
         isVisible ? "translate-y-0" : "-translate-y-full"
-      } ${isAtTop ? "bg-transparent" : "bg-zinc-900/90 shadow-md"}`}
+      } ${isAtTop ? "bg-transparent" : "bg-zinc-950 shadow-md"}`}
     >
       <nav
         aria-label="Global"
@@ -64,12 +64,12 @@ export default function Example() {
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-16">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm/6 font-semibold text-zinc-100"
+              className="text-sm font-semibold text-zinc-100"
             >
               {item.name}
             </Link>
@@ -82,7 +82,7 @@ export default function Example() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-zinc-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-zinc-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-zinc-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-zinc-900/10">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>

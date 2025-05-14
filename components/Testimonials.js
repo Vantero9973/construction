@@ -1,149 +1,96 @@
 const featuredTestimonial = {
-  body: "Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.",
+  body: "We hired this team for a full kitchen remodel, and from start to finish, it was a fantastic experience. They guided us through layout changes, cabinet selection, lighting, and finishes, all while staying within our budget. Their attention to detail and craftsmanship exceeded expectations. We love our new kitchen—it feels like a whole new home.",
   author: {
-    name: "Brenna Goyette",
-    handle: "brennagoyette",
-    imageUrl:
-      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
-    logoUrl: "https://tailwindui.com/plus/img/logos/savvycal-logo-zinc-900.svg",
+    name: "Angela Martinez",
+    jobType: "Kitchen Remodel",
   },
 };
+
 const testimonials = [
   [
     [
       {
-        body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
-        author: {
-          name: "Leslie Alexander",
-          handle: "lesliealexander",
-          imageUrl:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
+        body: "They turned our outdated bathroom into a spa-like retreat. The tile work was impeccable, and they finished everything on time without cutting corners.",
+        author: { name: "Megan Riley", jobType: "Bathroom Remodel" },
       },
       {
-        body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
-        author: {
-          name: "Leslie Alexander",
-          handle: "lesliealexander",
-          imageUrl:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
+        body: "We needed new flooring and a few small drywall repairs after water damage. They were in and out quickly, and the results look flawless.",
+        author: { name: "David Chen", jobType: "Flooring & Drywall" },
       },
       {
-        body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
-        author: {
-          name: "Leslie Alexander",
-          handle: "lesliealexander",
-          imageUrl:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
+        body: "Our deck was falling apart, and they rebuilt it beautifully with composite materials. It’s now our favorite part of the house.",
+        author: { name: "Jillian Novak", jobType: "Deck Rebuild" },
       },
     ],
     [
       {
-        body: "Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.",
-        author: {
-          name: "Lindsay Walton",
-          handle: "lindsaywalton",
-          imageUrl:
-            "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
+        body: "We had them finish our basement and add a laundry room. The layout works perfectly, and it feels like it was always part of the house.",
+        author: { name: "Craig Thompson", jobType: "Basement Finishing" },
       },
       {
-        body: "Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.",
-        author: {
-          name: "Lindsay Walton",
-          handle: "lindsaywalton",
-          imageUrl:
-            "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
-      },
-    ],
-  ],
-  [
-    [
-      {
-        body: "Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.",
-        author: {
-          name: "Tom Cook",
-          handle: "tomcook",
-          imageUrl:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
+        body: "I needed a few odd jobs done—cabinet repairs, some new trim, and painting. They jobTyped it all efficiently and with great care.",
+        author: { name: "Rita Owens", jobType: "Handyman Services" },
       },
     ],
     [
       {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
-        author: {
-          name: "Leonard Krasner",
-          handle: "leonardkrasner",
-          imageUrl:
-            "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
+        body: "Our garage had been a mess for years. They came in, cleaned it up, installed storage, and even built a workbench. Highly recommend!",
+        author: { name: "Marcus Hill", jobType: "Garage Organization" },
       },
       {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
-        author: {
-          name: "Leonard Krasner",
-          handle: "leonardkrasner",
-          imageUrl:
-            "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
+        body: "We had them repaint the entire interior of our home. The lines are crisp, and the colors look fantastic. Great team and communication.",
+        author: { name: "Natalie Brooks", jobType: "Interior Painting" },
+      },
+    ],
+    [
+      {
+        body: "Installed new lighting, repaired drywall, and mounted a few shelves in our living room. Super handy and very respectful of our home.",
+        author: { name: "Omar Grant", jobType: "Lighting & Drywall" },
       },
       {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
-        author: {
-          name: "Leonard Krasner",
-          handle: "leonardkrasner",
-          imageUrl:
-            "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-        },
+        body: "Built a custom closet for our master bedroom. It added so much storage and value to our space. Couldn’t be happier!",
+        author: { name: "Diana Patel", jobType: "Custom Closet" },
+      },
+      {
+        body: "We had an emergency leak in the ceiling and they came the same day to patch it up. Fast, friendly, and honest pricing.",
+        author: { name: "Ben Holloway", jobType: "Ceiling Repair" },
       },
     ],
   ],
 ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export default function Example() {
+export default function Testimonials() {
   return (
-    <div className="relative isolate pb-32 pt-24 sm:pt-32">
+    <div className="relative isolate bg-zinc-900 pb-32 pt-24 sm:pt-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-base/7 font-semibold text-indigo-600">
+        <div className="max-w-2xl">
+          <h2 className="text-base/7 font-semibold text-[#CD7F32]">
             Testimonials
           </h2>
-          <p className="mt-2 text-balance text-4xl font-semibold tracking-tight text-zinc-900 sm:text-5xl">
+          <p className="mt-2 text-balance text-4xl font-semibold tracking-tight text-zinc-100 sm:text-5xl">
             We have worked with thousands of amazing people
           </p>
         </div>
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-zinc-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-          <figure className="rounded-2xl bg-zinc-900 shadow-lg ring-1 ring-zinc-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-            <blockquote className="p-6 text-lg font-semibold tracking-tight text-zinc-900 sm:p-12 sm:text-xl/8">
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-zinc-100 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+          <figure className="rounded-2xl bg-zinc-800 shadow-lg ring-1 ring-zinc-100/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
+            <blockquote className="p-6 text-lg font-semibold tracking-tight text-zinc-100 sm:p-12 sm:text-xl/8">
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
-            <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-zinc-900/10 px-6 py-4 sm:flex-nowrap">
-              <img
-                alt=""
-                src={featuredTestimonial.author.imageUrl}
-                className="size-10 flex-none rounded-full bg-zinc-50"
-              />
+            <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-zinc-100/10 px-6 py-4 sm:flex-nowrap">
+              <div className="size-10 rounded-full bg-[#CD7F32] text-white flex items-center justify-center font-semibold">
+                {featuredTestimonial.author.name.charAt(0)}
+              </div>
               <div className="flex-auto">
                 <div className="font-semibold">
                   {featuredTestimonial.author.name}
                 </div>
-                <div className="text-zinc-600">{`@${featuredTestimonial.author.handle}`}</div>
+                <div className="text-zinc-300">
+                  {featuredTestimonial.author.jobType}
+                </div>
               </div>
-              <img
-                alt=""
-                src={featuredTestimonial.author.logoUrl}
-                className="h-10 w-auto flex-none"
-              />
             </figcaption>
           </figure>
+
           {testimonials.map((columnGroup, columnGroupIdx) => (
             <div
               key={columnGroupIdx}
@@ -152,34 +99,33 @@ export default function Example() {
               {columnGroup.map((column, columnIdx) => (
                 <div
                   key={columnIdx}
-                  className={classNames(
+                  className={`${
                     (columnGroupIdx === 0 && columnIdx === 0) ||
-                      (columnGroupIdx === testimonials.length - 1 &&
-                        columnIdx === columnGroup.length - 1)
+                    (columnGroupIdx === testimonials.length - 1 &&
+                      columnIdx === columnGroup.length - 1)
                       ? "xl:row-span-2"
-                      : "xl:row-start-1",
-                    "space-y-8"
-                  )}
+                      : "xl:row-start-1"
+                  } space-y-8`}
                 >
                   {column.map((testimonial) => (
                     <figure
-                      key={testimonial.author.handle}
-                      className="rounded-2xl bg-zinc-900 p-6 shadow-lg ring-1 ring-zinc-900/5"
+                      key={testimonial.author.name}
+                      className="rounded-2xl bg-zinc-800 p-6 shadow-lg ring-1 ring-zinc-100/5"
                     >
-                      <blockquote className="text-zinc-900">
+                      <blockquote className="text-zinc-100">
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
                       <figcaption className="mt-6 flex items-center gap-x-4">
-                        <img
-                          alt=""
-                          src={testimonial.author.imageUrl}
-                          className="size-10 rounded-full bg-zinc-50"
-                        />
+                        <div className="size-10 rounded-full bg-[#CD7F32] text-white flex items-center justify-center font-semibold">
+                          {testimonial.author.name.charAt(0)}
+                        </div>
                         <div>
                           <div className="font-semibold">
                             {testimonial.author.name}
                           </div>
-                          <div className="text-zinc-600">{`@${testimonial.author.handle}`}</div>
+                          <div className="text-zinc-300">
+                            {testimonial.author.jobType}
+                          </div>
                         </div>
                       </figcaption>
                     </figure>

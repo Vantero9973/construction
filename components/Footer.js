@@ -87,9 +87,9 @@ const navigation = {
   ],
 };
 
-export default function Example() {
+export default function Footer() {
   return (
-    <footer className="bg-zinc-900">
+    <footer className="bg-zinc-950">
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <img
@@ -187,12 +187,12 @@ export default function Example() {
               required
               placeholder="Enter your email"
               autoComplete="email"
-              className="w-full min-w-0 rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline outline-1 -outline-offset-1 outline-white/10 placeholder:text-zinc-500 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:w-56 sm:text-sm/6"
+              className="w-full min-w-0 rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline outline-1 -outline-offset-1 outline-white/10 placeholder:text-zinc-500 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-[#CD7F32] sm:w-56 sm:text-sm/6"
             />
             <div className="mt-4 sm:ml-4 sm:mt-0 sm:shrink-0">
               <button
                 type="submit"
-                className="flex w-full items-center justify-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                className="flex w-full items-center justify-center rounded-md bg-[#CD7F32] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#CD7F32] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CD7F32]"
               >
                 Subscribe
               </button>

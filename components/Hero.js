@@ -1,48 +1,54 @@
-"use client";
-
-import { Parallax } from "react-parallax";
-
-export default function Hero() {
+export default function Example() {
   return (
-    <Parallax
-      strength={300}
-      bgImage="https://images.unsplash.com/photo-1604943963840-a18fe96a6322?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      bgImageAlt="Luxury Remodel"
-    >
-      <div className="absolute inset-0 bg-black/40 z-0" />
-      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl py-32 sm:py-56 lg:py-72">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div className="relative rounded-full px-3 py-1 text-sm/6 text-zinc-400 ring-1 ring-white/10 hover:ring-white/20">
-              Announcing our next round of funding.{" "}
-              <a href="#" className="font-semibold text-white">
-                <span aria-hidden="true" className="absolute inset-0" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
+    <div className="relative bg-zinc-900">
+      <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+        <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-48 lg:pt-40 xl:col-span-6">
+          <div className="mx-auto max-w-lg lg:mx-0">
+            <div className="hidden sm:mt-32 sm:flex lg:mt-16">
+              <div className="relative rounded-full px-3 py-1 text-sm/6 text-zinc-400 ring-1 ring-zinc-100/10 hover:ring-zinc-100/20">
+                Transform your home into a masterpiece.{" "}
+                <a
+                  href="#"
+                  className="whitespace-nowrap font-semibold text-[#CD7F32]"
+                >
+                  <span aria-hidden="true" className="absolute inset-0" />
+                  See our projects <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="text-center">
-            <h1 className="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">
-              Data to enrich your online business
+            <h1 className="mt-24 text-pretty text-5xl font-semibold tracking-tight text-zinc-100 sm:mt-10 sm:text-7xl">
+              Remodeling That Reflects Your Style
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium text-zinc-400 sm:text-xl/8">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.
+              From custom kitchens to luxury baths, we bring your vision to
+              life. Quality craftsmanship, personalized design, and timeless
+              results — crafted just for you.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex items-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-md bg-[#CD7F32]/80 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#CD7F32]"
               >
-                Get started
+                Get a Free Consultation
               </a>
-              <a href="#" className="text-sm/6 font-semibold text-white">
-                Learn more <span aria-hidden="true">→</span>
+              <a href="#" className="text-sm/6 font-semibold text-zinc-100">
+                View Services <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
         </div>
+
+        <div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
+          <div className="relative w-full h-full">
+            <img
+              alt="Luxury Home Remodel"
+              src="https://www.fourbrothersdc.com/fb/fb_assets/fb-services-kitchens-main.jpg"
+              className="aspect-[3/2] w-full bg-zinc-900 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
+            />
+            <div className="absolute inset-0 bg-zinc-900/25" />
+          </div>
+        </div>
       </div>
-    </Parallax>
+    </div>
   );
 }

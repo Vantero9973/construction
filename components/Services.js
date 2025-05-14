@@ -1,118 +1,101 @@
-import { InboxIcon, SparklesIcon } from "@heroicons/react/24/outline";
+"use client";
 
-export default function Example() {
+import {
+  HomeModernIcon,
+  WrenchScrewdriverIcon,
+  PaintBrushIcon,
+  Squares2X2Icon,
+  BuildingOffice2Icon,
+  RectangleStackIcon,
+  WrenchIcon,
+  ClipboardDocumentCheckIcon,
+} from "@heroicons/react/20/solid";
+
+const services = [
+  {
+    title: "Bathroom Remodel",
+    description:
+      "Modernize your bathroom with updated fixtures, tilework, and custom layouts.",
+    icon: WrenchScrewdriverIcon,
+    href: "/services/bathroom-remodel",
+  },
+  {
+    title: "Kitchen Remodel",
+    description:
+      "Upgrade your kitchen for style, storage, and improved functionality.",
+    icon: HomeModernIcon,
+    href: "/services/kitchen-remodel",
+  },
+  {
+    title: "Basement Remodel",
+    description: "Transform your basement into a livable, welcoming space.",
+    icon: RectangleStackIcon,
+    href: "/services/basement-remodel",
+  },
+  {
+    title: "Complete Home Remodel",
+    description:
+      "Comprehensive renovation to bring new life to your entire home.",
+    icon: BuildingOffice2Icon,
+    href: "/services/complete-home-remodel",
+  },
+  {
+    title: "Flooring",
+    description:
+      "Durable and attractive flooring options to suit any room or style.",
+    icon: Squares2X2Icon,
+    href: "/services/flooring",
+  },
+  {
+    title: "Tiling",
+    description: "Custom tile installations for kitchens, bathrooms, and more.",
+    icon: ClipboardDocumentCheckIcon,
+    href: "/services/tiling",
+  },
+  {
+    title: "Painting",
+    description:
+      "Interior and exterior painting to give your home a fresh look.",
+    icon: PaintBrushIcon,
+    href: "/services/painting",
+  },
+  {
+    title: "Decks",
+    description: "Custom-built decks to enhance your outdoor living space.",
+    icon: WrenchIcon,
+    href: "/services/decks",
+  },
+];
+
+export default function Services() {
   return (
-    <div className="relative overflow-hidden bg-zinc-900 pb-32 pt-16">
-      <div className="relative">
-        <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-          <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:px-0 lg:py-16">
-            <div>
-              <div>
-                <span className="flex size-12 items-center justify-center rounded-xl bg-indigo-600">
-                  <InboxIcon aria-hidden="true" className="size-8 text-white" />
-                </span>
+    <section className="bg-zinc-900">
+      <div className="mx-auto max-w-7xl py-16 px-6">
+        <div className="max-w-2xl">
+          <h2 className="text-base/7 font-semibold text-[#CD7F32]">Services</h2>
+          <p className="mt-2 text-balance text-4xl font-semibold tracking-tight text-zinc-100 sm:text-5xl">
+            Expert remodeling and repair solutions
+          </p>
+        </div>
+
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {services.map((service, idx) => (
+            <div
+              key={idx}
+              className="bg-zinc-800 shadow-md ring ring-zinc-800 p-6 rounded-lg shadow-xl transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer"
+            >
+              <div className="bg-[#CD7F32] w-fit rounded-full p-2 mb-4">
+                <service.icon className="h-8 w-8 text-zinc-800" />
               </div>
-              <div className="mt-6">
-                <h2 className="text-3xl font-bold tracking-tight text-zinc-900">
-                  Stay on top of customer support
-                </h2>
-                <p className="mt-4 text-lg text-zinc-500">
-                  Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-                  bibendum malesuada faucibus lacinia porttitor. Pulvinar
-                  laoreet sagittis viverra duis. In venenatis sem arcu pretium
-                  pharetra at. Lectus viverra dui tellus ornare pharetra.
-                </p>
-                <div className="mt-6">
-                  <a
-                    href="#"
-                    className="inline-flex rounded-lg bg-indigo-600 px-4 py-1.5 text-base/7 font-semibold text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
-                  >
-                    Get started
-                  </a>
-                </div>
-              </div>
+
+              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+              <p className="text-sm text-zinc-400 mb-4">
+                {service.description}
+              </p>
             </div>
-            <div className="mt-8 border-t border-zinc-200 pt-6">
-              <blockquote>
-                <div>
-                  <p className="text-base text-zinc-500">
-                    &ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed
-                    diam. Sit orci risus aenean curabitur donec aliquet. Mi
-                    venenatis in euismod ut.&rdquo;
-                  </p>
-                </div>
-                <footer className="mt-3">
-                  <div className="flex items-center space-x-3">
-                    <div className="shrink-0">
-                      <img
-                        alt=""
-                        src="https://images.unsplash.com/photo-1604943963840-a18fe96a6322?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        className="size-6 rounded-full"
-                      />
-                    </div>
-                    <div className="text-base font-medium text-zinc-700">
-                      Marcia Hill, Digital Marketing Manager
-                    </div>
-                  </div>
-                </footer>
-              </blockquote>
-            </div>
-          </div>
-          <div className="mt-12 sm:mt-16 lg:mt-0">
-            <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-              <img
-                alt="Inbox user interface"
-                src="https://images.unsplash.com/photo-1604943963840-a18fe96a6322?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                className="w-full rounded-xl shadow-xl ring-1 ring-black/5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-              />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-      <div className="mt-24">
-        <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-          <div className="mx-auto max-w-xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:px-0 lg:py-32">
-            <div>
-              <div>
-                <span className="flex size-12 items-center justify-center rounded-xl bg-indigo-600">
-                  <SparklesIcon
-                    aria-hidden="true"
-                    className="size-8 text-white"
-                  />
-                </span>
-              </div>
-              <div className="mt-6">
-                <h2 className="text-3xl font-bold tracking-tight text-zinc-900">
-                  Better understand your customers
-                </h2>
-                <p className="mt-4 text-lg text-zinc-500">
-                  Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-                  bibendum malesuada faucibus lacinia porttitor. Pulvinar
-                  laoreet sagittis viverra duis. In venenatis sem arcu pretium
-                  pharetra at. Lectus viverra dui tellus ornare pharetra.
-                </p>
-                <div className="mt-6">
-                  <a
-                    href="#"
-                    className="inline-flex rounded-lg bg-indigo-600 px-4 py-1.5 text-base/7 font-semibold text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
-                  >
-                    Get started
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
-            <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-              <img
-                alt="Customer profile user interface"
-                src="https://images.unsplash.com/photo-1604943963840-a18fe96a6322?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                className="w-full rounded-xl shadow-xl ring-1 ring-black/5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 }
