@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Blog() {
   return (
     <div className="relative bg-zinc-900 px-6 pb-20 pt-16 lg:px-8 lg:pb-28 lg:pt-24">
@@ -20,11 +22,12 @@ export default function Blog() {
               key={post.title}
               className="flex flex-col overflow-hidden rounded-lg shadow-lg"
             >
-              <div className="shrink-0">
-                <img
+              <div className="relative h-48 w-full">
+                <Image
                   alt=""
                   src={post.imageUrl}
-                  className="h-48 w-full object-cover"
+                  fill
+                  className="object-cover rounded-lg"
                 />
               </div>
               <div className="flex flex-1 flex-col justify-between bg-zinc-800 p-6">
