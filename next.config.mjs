@@ -4,7 +4,6 @@ const nextConfig = {
     domains: [
       "images.unsplash.com",
       "www.fourbrothersdc.com",
-      "hips.hearstapps.com",
       "cardinalrealtors.com",
       "kowalske.com",
       "dam.thdstatic.com",

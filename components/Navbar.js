@@ -22,14 +22,27 @@ export default function Navbar() {
   const lastScrollY = useRef(0);
 
   useEffect(() => {
+    let hideTimeout;
+    let hasPendingHide = false;
+
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
       setIsAtTop(currentScrollY <= 10);
 
-      if (currentScrollY > lastScrollY.current && currentScrollY > 50) {
-        setIsVisible(false);
-      } else {
+      const scrollingDown = currentScrollY > lastScrollY.current;
+
+      if (scrollingDown && !hasPendingHide && currentScrollY > 50) {
+        hasPendingHide = true;
+        hideTimeout = setTimeout(() => {
+          setIsVisible(false);
+          hasPendingHide = false;
+        }, 1000);
+      }
+
+      if (!scrollingDown || currentScrollY <= 10) {
+        clearTimeout(hideTimeout);
+        hasPendingHide = false;
         setIsVisible(true);
       }
 
@@ -37,7 +50,10 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      clearTimeout(hideTimeout);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (

@@ -12,9 +12,6 @@ const images = [
     url: "https://www.fourbrothersdc.com/fb/fb_assets/fb-services-kitchens-main.jpg",
   },
   {
-    url: "https://hips.hearstapps.com/hmg-prod/images/hbx080117hoedemaker09-1550604152.jpg?crop=0.447xw:1.00xh;0.0969xw,0&resize=980:*",
-  },
-  {
     url: "https://cardinalrealtors.com/wp-content/uploads/2015/07/remodeling_landing_top.jpg",
   },
   {
