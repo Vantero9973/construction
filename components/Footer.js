@@ -2,28 +2,31 @@ import Image from "next/image";
 import logo from "@/public/media/logo.jpeg";
 
 const navigation = {
-  solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Automation", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
+  services: [
+    { name: "Bathroom Remodel", href: "#" },
+    { name: "Kitchen Remodel", href: "#" },
+    { name: "Basement Remodel", href: "#" },
+    { name: "Complete Home Remodel", href: "#" },
+    { name: "Flooring", href: "#" },
+    { name: "Tiling", href: "#" },
+    { name: "Painting", href: "#" },
+    { name: "Decks", href: "#" },
   ],
   support: [
-    { name: "Submit ticket", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
+    { name: "Request a Quote", href: "#" },
+    { name: "FAQ", href: "#" },
+    { name: "Customer Support", href: "#" },
   ],
   company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
+    { name: "About Us", href: "#" },
+    { name: "Our Team", href: "#" },
+    { name: "Careers", href: "#" },
+    { name: "Service Areas", href: "#" },
   ],
   legal: [
-    { name: "Terms of service", href: "#" },
-    { name: "Privacy policy", href: "#" },
-    { name: "License", href: "#" },
+    { name: "Terms of Service", href: "#" },
+    { name: "Privacy Policy", href: "#" },
+    { name: "License & Insurance", href: "#" },
   ],
   social: [
     {
@@ -103,7 +106,7 @@ export default function Footer() {
                   Solutions
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.solutions.map((item) => (
+                  {navigation.services.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
