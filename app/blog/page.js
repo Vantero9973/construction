@@ -116,7 +116,7 @@ const posts = [
     href: "#",
     category: { name: "Marketing", href: "#" },
     description:
-      "The most memorable campaigns all have one thing in common: powerful storytelling. Here's why it works.",
+      "The most memorable campaigns all have one thing in common: powerful storytelling. Here&apos;s why it works.",
     date: "May 01, 2020",
     datetime: "2020-05-01",
     imageUrl:
@@ -149,7 +149,7 @@ const posts = [
     href: "#",
     category: { name: "Remote Work", href: "#" },
     description:
-      "Working from home doesn't have to be a grind. Here are some clever ways to make the most of it.",
+      "Working from home doesn&apos;t have to be a grind. Here are some clever ways to make the most of it.",
     date: "Jun 20, 2020",
     datetime: "2020-06-20",
     imageUrl:

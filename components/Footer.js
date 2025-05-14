@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logo from "@/public/media/logo.jpeg";
 
 const navigation = {
   solutions: [
@@ -94,11 +95,7 @@ export default function Footer() {
     <footer className="bg-zinc-950">
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <Image
-            alt="Company name"
-            src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
-            className="h-9"
-          />
+          <Image alt="" src={logo} className="h-12 w-auto rounded-lg" />
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>

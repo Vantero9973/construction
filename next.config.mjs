@@ -4,7 +4,11 @@ const nextConfig = {
     domains: [
       "images.unsplash.com",
       "www.fourbrothersdc.com",
-      "tailwindui.com",
+      "hips.hearstapps.com",
+      "cardinalrealtors.com",
+      "kowalske.com",
+      "dam.thdstatic.com",
+      "mylandmark.la",
     ],
   },
 };

@@ -45,6 +45,7 @@ export default function Example() {
             <Image
               alt="Luxury Home Remodel"
               src="https://www.fourbrothersdc.com/fb/fb_assets/fb-services-kitchens-main.jpg"
+              fill
               className="aspect-[3/2] w-full bg-zinc-900 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
             />
             <div className="absolute inset-0 bg-zinc-900/25" />
