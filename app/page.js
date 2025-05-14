@@ -7,9 +7,11 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <Services />
-      <Portfolio />
-      <Testimonials />
+      <div className="bg-zinc-900 pb-16">
+        <Services />
+        <Portfolio />
+        <Testimonials />
+      </div>
     </div>
   );
 }
