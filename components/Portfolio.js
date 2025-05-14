@@ -53,14 +53,11 @@ export default function PortfolioGallery() {
         >
           {images.map((img, index) => (
             <SwiperSlide key={index} className="!w-auto !flex-none">
-              <div className="relative h-[500px] w-auto">
-                <Image
-                  src={img.url}
-                  alt={`Project ${index + 1}`}
-                  fill
-                  className="object-cover rounded-lg hover:opacity-90 transition"
-                />
-              </div>
+              <img
+                src={img.url}
+                alt={`Project ${index + 1}`}
+                className="h-[500px] w-auto object-cover rounded-lg hover:opacity-90 transition"
+              />
             </SwiperSlide>
           ))}
         </Swiper>
