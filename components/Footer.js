@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const navigation = {
   solutions: [
     { name: "Marketing", href: "#" },
@@ -92,7 +94,7 @@ export default function Footer() {
     <footer className="bg-zinc-950">
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <img
+          <Image
             alt="Company name"
             src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
             className="h-9"

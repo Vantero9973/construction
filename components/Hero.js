@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Example() {
   return (
     <div className="relative bg-zinc-900">
@@ -40,7 +42,7 @@ export default function Example() {
 
         <div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
           <div className="relative w-full h-full">
-            <img
+            <Image
               alt="Luxury Home Remodel"
               src="https://www.fourbrothersdc.com/fb/fb_assets/fb-services-kitchens-main.jpg"
               className="aspect-[3/2] w-full bg-zinc-900 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"

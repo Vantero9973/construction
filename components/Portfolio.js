@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -52,11 +53,14 @@ export default function PortfolioGallery() {
         >
           {images.map((img, index) => (
             <SwiperSlide key={index} className="!w-auto !flex-none">
-              <img
-                src={img.url}
-                alt={`Project ${index + 1}`}
-                className="h-[500px] max-h-[500px] w-auto object-cover rounded-lg hover:opacity-90 transition"
-              />
+              <div className="relative h-[500px] w-auto">
+                <Image
+                  src={img.url}
+                  alt={`Project ${index + 1}`}
+                  fill
+                  className="object-cover rounded-lg hover:opacity-90 transition"
+                />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
